@@ -8,10 +8,16 @@ function SinglePage() {
 
   return (
     <div className="bg-white">
-      <section className="container mx-auto py-20 grid grid-cols-2 gap-10">
-        <h2 className="text-2xl text-center">
-          საინტერესო ფაქტი - {fact.title}
-        </h2>
+      <section className="container mx-auto pt-20 grid grid-cols-2 gap-10">
+        <div>
+          <img src={fact.img} alt={fact.title} className="rounded-md" />
+        </div>
+        <div>
+          <h2 className="text-2xl mb-10">
+            საინტერესო ფაქტი - <span className="font-bold">{fact.title}</span>
+          </h2>
+          <p className="leading-8">{fact.description}</p>
+        </div>
       </section>
     </div>
   );

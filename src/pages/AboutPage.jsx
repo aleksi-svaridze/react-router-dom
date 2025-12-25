@@ -27,11 +27,13 @@ function AboutPage() {
         </div>
       </section>
       <h2 className="text-2xl text-center">საინტერესო ფაქტები</h2>
-      <section className="container mx-auto py-20 grid grid-cols-3 gap-10">
+      <section className="container mx-auto py-20 grid grid-cols-2">
         {facts.map((fact) => (
           <FactCard
             key={fact.id}
+            img={fact.img}
             title={fact.title}
+            shortDesc={fact.shortDesc}
             description={fact.description}
             btnText={fact.btnText}
             id={fact.id}
