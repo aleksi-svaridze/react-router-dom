@@ -14,12 +14,12 @@ export const routes = [
         index: true,
       },
       {
-        element: <SinglePage />,
-        path: ":id",
-      },
-      {
         element: <AboutPage />,
         path: "about",
+      },
+      {
+        element: <SinglePage />,
+        path: "about/:factId",
       },
       {
         element: <NotFoundPage />,
