@@ -1,7 +1,7 @@
 function AboutPage() {
   return (
-    <div>
-      <h1>About page</h1>
+    <div className="bg-blue-500">
+      <section className="container mx-auto">A</section>
     </div>
   );
 }
