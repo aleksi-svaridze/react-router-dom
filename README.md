@@ -1,6 +1,6 @@
 # React router dom
 
-[View template here](https://legendary-tarsier-850ef7.netlify.app/)
+[View template - beamish-parfait-98cd2a.netlify.app](https://beamish-parfait-98cd2a.netlify.app/)
 
 - აირჩიე რომელიმე მხატვრული პერსონაჟი და შექმენი აპლიკაცია react-router-dom ბიბლიოთეკის გამოყენებით
 - აპლიკაციაში უნდა იყოს მთავარი გვერდი, პერსონაჟის ფოტოთი და სახელით, /about გვერდი, სადაც პერსონაჟზე ზოგადი ინფორმაცია იქნება მოთავსებული და /:factId გვერდი, სადაც JavaScript ობიექტიდან იქნება შერჩეული ფაქტი კონკრეტული id-ით
