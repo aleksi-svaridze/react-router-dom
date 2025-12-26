@@ -1,18 +1,14 @@
-import { useState } from "react";
 import AlanPaintImage from "../assets/alan-paint.jpeg";
-import FactCard from "../components/FactCard";
-import factsData from "../data/FactsData";
 
 function AboutPage() {
-  const [facts] = useState(factsData);
   return (
     <div className="bg-white">
-      <section className="container mx-auto py-20 grid grid-cols-2 gap-10">
+      <section className="container mx-auto pt-5 md:py-20 grid md:grid-cols-2 gap-10 px-4">
         <div>
           <img
             src={AlanPaintImage}
             alt="Alan Mathison Turing"
-            className=" rounded-2xl inline shadow"
+            className=" md:rounded-2xl inline shadow w-full"
           />
         </div>
         <div className="">
@@ -25,20 +21,6 @@ function AboutPage() {
             ხელოვნური ინტელექტის განვითარებისათვის.
           </p>
         </div>
-      </section>
-      <h2 className="text-2xl text-center">საინტერესო ფაქტები</h2>
-      <section className="container mx-auto py-20 grid grid-cols-2">
-        {facts.map((fact) => (
-          <FactCard
-            key={fact.id}
-            img={fact.img}
-            title={fact.title}
-            shortDesc={fact.shortDesc}
-            description={fact.description}
-            btnText={fact.btnText}
-            id={fact.id}
-          />
-        ))}
       </section>
     </div>
   );

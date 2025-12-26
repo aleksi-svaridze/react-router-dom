@@ -3,11 +3,14 @@ import AboutPage from "../pages/AboutPage";
 import LinkLayout from "../layouts/LinkLayout";
 import SinglePage from "../pages/SinglePage";
 import NotFoundPage from "../pages/NotFoundPage";
+import FactsPage from "../pages/FactsPage";
+import ErrorPage from "../pages/ErrorPage";
 
 export const routes = [
   {
     element: <LinkLayout />,
     path: "/",
+
     children: [
       {
         element: <HomePage />,
@@ -18,8 +21,13 @@ export const routes = [
         path: "about",
       },
       {
+        element: <FactsPage />,
+        path: "facts",
+      },
+      {
         element: <SinglePage />,
-        path: "about/:factId",
+        errorElement: <ErrorPage />,
+        path: "facts/:factTitle",
       },
       {
         element: <NotFoundPage />,
