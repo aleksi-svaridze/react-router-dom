@@ -11,7 +11,7 @@ function HomePage() {
           className="w-full md:w-1/2 lg:w-1/3 md:rounded-2xl inline shadow"
         />
         <h1 className="text-2xl mt-6 mb-10">ალან ტიურინგი</h1>
-        <Btn url={"about"} text="შეიტყვეთ მეტი.." />
+        <Btn url={"about"} text="დეტალურად" />
       </section>
     </div>
   );
