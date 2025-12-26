@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import { LogoSvg } from "../assets/svgs";
+import { LogoSvg } from "../assets/Svgs";
 import { CiMenuFries } from "react-icons/ci";
 import { useState } from "react";
 
